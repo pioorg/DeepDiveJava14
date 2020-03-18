@@ -140,61 +140,61 @@ public class TextBlocks {
 //		This doesn't compile, no matching closing.");
 
         println("""
-                This has three ", you see? \"""
-                """);
+			This has three ", you see? \"""
+			""");
 
         println("""
-                This is not indented.
-                """);
+		This is not indented.
+		""");
 
         println("""
-                This is not indented too.
-                """);
+			This is not indented too.
+			""");
 
         println("""
-                This is not indented either.
-                """);
+					This is not indented either.
+					""");
 
         println("""
-                	This is indented.
-                """);
+			This is indented.
+		""");
 
         println("""
-                	This is indented.
-                """);
+		This is indented.
+	""");
 
         println("""
-                		This is veeery indented.
-                """);
+						This is veeery indented.
+				""");
 
         println("""
-                You don't have to close text block in the next line.""");
+			You don't have to close text block in the next line.""");
 
         println("""
-                Or you can have many empty lines...
+			Or you can have many empty lines...
 
-                in between...
-
-
-                or at the end.
+			in between...
 
 
-                   """);
+			or at the end.
 
-        println("""
-                     spaces
-                tabs
-                     more spaces
-                 	 	""");
+
+		    """);
 
         println("""
-                ene """ + """
-                \t\tdue """);
+        spaces
+			tabs
+        more spaces
+	 	 	 	""");
 
         println("""
-                What's your name? [%s]
-                What's your number? [%d]
-                """.formatted(
-                ProcessHandle.current().info().user().orElse("FORBIDDEN"), ProcessHandle.current().pid()));
+			ene """ + """
+			\t\tdue """);
+
+        println("""
+				What's your name? [%s]
+				What's your number? [%d]
+				""".formatted(
+            ProcessHandle.current().info().user().orElse("FORBIDDEN"), ProcessHandle.current().pid()));
     }
 }
