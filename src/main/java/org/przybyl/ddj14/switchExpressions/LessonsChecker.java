@@ -32,17 +32,19 @@ public class LessonsChecker {
     public static void main(String[] args) {
         System.out.println("Hello Java 14!");
 
-        if (args == null || args.length == 0) {
-            System.out.println("I have no lessons!");
-        } else {
-            Stream.of(args)
-                    .map(DayOfWeek::fromString)
-                    .forEach(od -> od.ifPresent(d ->
-                            System.out.printf("On %s I have %d lessons.%n", d,
-                            howManyLessonsArrow(d)
-                            //howManyLessonsExpressionWithYield(d)
-                            )));
-        }
+//        if (args == null || args.length == 0) {
+//            System.out.println("I have no lessons!");
+//        } else {
+//            Stream.of(args)
+//                    .map(DayOfWeek::fromString)
+//                    .forEach(od -> od.ifPresent(d ->
+//                            System.out.printf("On %s I have %d lessons.%n", d,
+//                                howManyLessonsExpressionWithYield(d)
+//                            //howManyLessonsExpressionWithYield(d)
+//                            )));
+//        }
+
+        switchDoesNotNeedAssignedType();
 
     }
 

@@ -29,7 +29,7 @@ public class Limitations {
 }
 
 record CannotExtend(int a)
-//	extends Date
+//	extends java.util.Date
 {}
 
 class ExtendingRecordDoesNotWork

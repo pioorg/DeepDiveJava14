@@ -17,6 +17,9 @@
 
 package org.przybyl.ddj14.records.s0_hello;
 
+/**
+ * Take a look at //https://en.wikipedia.org/wiki/Complex_number
+ */
 public record Complex(double real, double imaginary) {
 	public Complex add(Complex that) {
 		return new Complex(this.real + that.real, this.imaginary + that.imaginary);

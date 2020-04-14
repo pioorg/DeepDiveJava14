@@ -29,6 +29,7 @@ public class HelloRecords {
         // record is not a restricted keyword?
         Complex record = new Complex(1,1);
 		System.out.println(record);
+
 		// enum is a restricted keyword
         // Complex enum = new Complex(1,1);
 		// System.out.println(enum);
