@@ -20,7 +20,7 @@ package org.przybyl.ddj14.records.s3_serialization;
 import java.io.*;
 
 class SerializationBeanCheck implements Serializable {
-//	@JsonProperty
+	@com.fasterxml.jackson.annotation.JsonProperty
 	private final String justOneField;
 
 	public SerializationBeanCheck(String justOneField) {
@@ -28,7 +28,7 @@ class SerializationBeanCheck implements Serializable {
 		System.out.println("We're creating bean for [%s]".formatted(justOneField));
 	}
 
-//	@JsonProperty
+//	@com.fasterxml.jackson.annotation.JsonProperty
 	public String justOneField() {
 		return justOneField;
 	}

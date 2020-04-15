@@ -29,8 +29,8 @@ public class JSONifocation {
 	public static void main(String[] args) throws JsonProcessingException {
 		var mapper = new ObjectMapper();
 
-//		System.out.println(mapper.writeValueAsString(new SerializationBeanCheck("Bean")));
-//		System.out.println(mapper.writeValueAsString(new SerializationRecordCheck("Record")));
+		System.out.println(mapper.writeValueAsString(new SerializationBeanCheck("Bean")));
+		System.out.println(mapper.writeValueAsString(new SerializationRecordCheck("Record")));
 
 		reflectiveExamination(SerializationBeanCheck.class);
 		reflectiveExamination(SerializationRecordCheck.class);
