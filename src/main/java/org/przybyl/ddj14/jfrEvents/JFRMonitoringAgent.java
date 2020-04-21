@@ -23,7 +23,7 @@ import jdk.jfr.consumer.*;
 
 
 // To use this agent please
-// mvn package
+// ./mvnw package
 // then run the GarbageGenerator with
 // -javaagent:target/ddj14-1.0-SNAPSHOT.jar
 public class JFRMonitoringAgent {
