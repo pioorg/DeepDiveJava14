@@ -27,6 +27,8 @@ public class TextBlocks {
         System.out.println(getPoemDetailsFromBlock());
 //        System.out.println(getLoremIpsum().replaceAll("\n", ""));
 //        System.out.println(getLoremIpsumOneLine());
+//        System.out.println(trimmed());
+//        System.out.println(notTrimmed());
 //        println(getCows());
 //        println(getCowTown());
 //        indentationTests();
@@ -88,6 +90,24 @@ public class TextBlocks {
                 """;
     }
 
+    public static String trimmed() {
+        return """
+            Du
+            hast
+            mich
+            gefragt
+            """;
+    }
+
+    public static String notTrimmed() {
+        return """
+            Du     \s
+            hast   \s
+            mich   \s
+            gefragt\s
+            """;
+    }
+
     public static String getCows() {
         return """
                           (__)                     )__(                vv    vv     
@@ -96,9 +116,9 @@ public class TextBlocks {
                   / |     ||               / |     ||                 /\\-------/   
                  *  ||----||              /  ||----||                (oo)           
                     ^^    ^^                 vv    vv                (~~)           
-                \s
+                
                  American Cow              Polish Cow            Australian Cow     
-                \s
+                
                 http://instinct.org/cows/ascii-cows1.html
                 """;
     }
@@ -125,7 +145,7 @@ public class TextBlocks {
                               / |     ||        ||_______| \\
                              *  ||W---||        ||      ||  *
                                 ^^    ^^        ^^      ^^
-                \s
+                
                                          "Cow Town"
                                          http://instinct.org/cows/ascii-cows1.html""";
     }
