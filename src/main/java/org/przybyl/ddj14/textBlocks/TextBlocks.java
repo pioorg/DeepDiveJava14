@@ -25,10 +25,10 @@ public class TextBlocks {
         System.out.println(getPoemFromTextBlock());
         System.out.println(getPoemDetails());
         System.out.println(getPoemDetailsFromBlock());
-//        System.out.println(getLoremIpsum().replaceAll("\n", ""));
-//        System.out.println(getLoremIpsumOneLine());
 //        System.out.println(trimmed());
 //        System.out.println(notTrimmed());
+//        System.out.println(getLoremIpsum().replaceAll("\n", ""));
+//        System.out.println(getLoremIpsumOneLine());
 //        println(getCows());
 //        println(getCowTown());
 //        indentationTests();
@@ -70,6 +70,24 @@ public class TextBlocks {
                 """;
     }
 
+	public static String trimmed() {
+		return """
+            Du
+            hast
+            mich
+            gefragt
+            """;
+	}
+
+	public static String notTrimmed() {
+		return """
+            Du     \s
+            hast   \s
+            mich   \s
+            gefragt\s
+            """;
+	}
+
     public static String getLoremIpsum() {
         return """
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -88,24 +106,6 @@ public class TextBlocks {
                 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia \
                 deserunt mollit anim id est laborum.\
                 """;
-    }
-
-    public static String trimmed() {
-        return """
-            Du
-            hast
-            mich
-            gefragt
-            """;
-    }
-
-    public static String notTrimmed() {
-        return """
-            Du     \s
-            hast   \s
-            mich   \s
-            gefragt\s
-            """;
     }
 
     public static String getCows() {
